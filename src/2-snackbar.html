@@ -8,7 +8,34 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main></main>
+    <main>
+      <button class="nav-btn" type="button">
+        <a href="./index.html">Go-back</a>
+      </button>
+
+      <form class="form">
+        <label class="inp-label">
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button class="creat-notif" type="submit">Create notification</button>
+      </form>
+    </main>
 
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
